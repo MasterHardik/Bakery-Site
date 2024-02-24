@@ -1,0 +1,74 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f1f1;
+  padding: 1rem 2rem;
+  height: 65px;
+  position: fixed; /**/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-bottom: 3px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-logo h2 {
+  /* color: #4a4e69; */
+  color: #cd018d;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+  height: 30px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  /* color: #4a4e69; */
+  color: #cd018d;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.navbar-links li a:hover {
+  color: #6f74bd;
+  border-bottom: 1px solid rgba(200, 53, 77, 0.952);
+}
+
+#cake_img {
+  height: 35px;
+  width: 35px;
+  border-radius: 30px;
+}
+
+#category {
+  border: none;
+  background-color: #f8f1f1;
+  width: 90px;
+  font-size: 18px;
+  color: #4a4e69;
+}
+
+@media screen and (max-width: 796px) {
+  .navbar-links {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.slider {
+  display: flex;
+  position: relative;
+  margin-top: 45px;
+  width: 100%;
+  height: 16rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
